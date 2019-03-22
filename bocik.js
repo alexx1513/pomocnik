@@ -8,7 +8,7 @@ client.on('ready' , () => {
     console.log("Podłączono do serwera DoGryCzlowieku.pl")
 })
 
-bot_secret_token = "NDg1MTY5MTI2OTMxOTU1NzMy.D3GkNA.FLyEGR-zhp8Sbeo352yGuYasTpw"
+bot_secret_token = "NTU4NzA3NTI5NjA2MjM0MTI4.D3awhg.9xvatvwhDzDd5GKXKhIKgkJwiGc"
 
 client.login(bot_secret_token)
 
@@ -20,9 +20,9 @@ client.on('ready' , () => {
     .setTitle("BOT NAWIĄZAŁ POŁACZENIE")
     .setDescription("Połączenie z serwerem zostało nawiązane pomyślnie")
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
 
-    var generalChannel = client.channels.get("557594178704375820")
+    var generalChannel = client.channels.get("558703773682368524")
     generalChannel.send(polaczono)
 })
 
@@ -34,7 +34,7 @@ client.on('message' , message => {
     .setTitle('Link do zapraszania znajomych')
     .setDescription('https://discord.gg/Tr4mUGQ')
     .addField('Informacja', 'Prosimy nie wysyłać masowo zaproszeń do ludzi, wysyłajcie te zaproszenia tylko do znajomych :grin:', true)
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
     message.channel.send(zapro)
     const logzapro = new Discord.RichEmbed()
     .setColor('#001bff')
@@ -42,8 +42,8 @@ client.on('message' , message => {
     .setTitle('Użytkownik zarządał linku zaproszenia')
     .setDescription(`${message.author} zarządał linku zaproszenia`)
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-    var generalChannel = client.channels.get("557594178704375820")
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    var generalChannel = client.channels.get("558703773682368524")
     generalChannel.send(logzapro)
 }
 else if (message.content === '=help') {
@@ -54,7 +54,7 @@ else if (message.content === '=help') {
     .setDescription('Spójrz niżej - obecnie użytkownicy nie mają wielu dostępnych komend')
     .addField('=zaproszenie', 'Komenda wyświetlająca link zaproszenia', true)
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
     message.channel.send(pomoc)
     const logpomoc = new Discord.RichEmbed()
     .setColor('#001bff')
@@ -62,8 +62,8 @@ else if (message.content === '=help') {
     .setTitle('Użytkownik zarządał pomocy BOTa')
     .setDescription(`${message.author} zarządał pomocy`)
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-    var generalChannel = client.channels.get("557594178704375820")
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    var generalChannel = client.channels.get("558703773682368524")
     generalChannel.send(logpomoc)
 }
 })
@@ -82,8 +82,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             message.channel.send(`${message.author} Niepoprawne użycie. Proszę oznaczyć osobę która ma otrzymać WARNa.`)
          return  generalChannel.send(bladwarn)
         }
@@ -95,12 +95,12 @@ client.on('message' , message => {
     .setDescription('Złamano regulamin, dokonano ostrzeżenia')
     .setAuthor('Pomocnik - WARN')
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
     .addField('Ostrzegający', `${message.author}`, true)
     .addField('Ostrzeżony', `${taggedUser}`, true)
     var generalChannel = client.channels.get("558008892299280384")
     generalChannel.send(warnik)
-    member.addRole('557951255222157324')
+    member.addRole('558702528309624833')
     }
     else if (command === 'unwarn') { /* Usuwanie warnów*/ 
         message.delete()
@@ -112,8 +112,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             message.channel.send(`${message.author} Niepoprawne użycie. Proszę oznaczyć osobę która ma otrzymać unWARNa.`)
          return  generalChannel.send(bladunwarn)
         }
@@ -124,13 +124,13 @@ client.on('message' , message => {
     .setTitle('OSTRZEŻENIE/WARN - Odwołanie')
     .setDescription('Ostrzeżenie zostało odwołane')
     .setAuthor('Pomocnik - unWARN')
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
     .setTimestamp()
     .addField('Osoba cofająca ostrzeżenie', `${message.author}`, true)
     .addField('Osoba której cofnięto ostrzeżenie', `${taggedUser}`, true)
     var generalChannel = client.channels.get("558008892299280384")
     generalChannel.send(unwarnik)
-    member.removeRole('557951255222157324')
+    member.removeRole('558702528309624833')
 }
     else if (command === "streamstart") { /* Przypomnienie o streamie*/
     message.delete()
@@ -145,8 +145,8 @@ client.on('message' , message => {
     .addField('Zresztą na Facebooku również go zaobserwuj', 'Co Ci zaszkodzi polubić [tą](https://www.facebook.com/Yester-633283243680497/) stronę :thinking:', true)
     .addField('Oznaczę was żebyście widzieli :grin:', '@here', true)
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-    var generalChannel = client.channels.get("557642284808536064")
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    var generalChannel = client.channels.get("558701163067998219")
     generalChannel.send(streamstart)
     client.user.setActivity("Stream Yestera!", {type: "WATCHING"})
 }
@@ -162,8 +162,8 @@ client.on('message' , message => {
     .addField('Zresztą na Facebooku również go zaobserwuj', 'Co Ci zaszkodzi polubić [tą](https://www.facebook.com/Yester-633283243680497/) stronę :thinking:', true)
     .addField('Tu też was oznaczę :joy:', '@here', true)
     .setTimestamp()
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-    var generalChannel = client.channels.get("557642284808536064")
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    var generalChannel = client.channels.get("558701163067998219")
     generalChannel.send(streamstope)
     client.user.setActivity("Yester! na Youtubie", {type: "WATCHING"})
 }
@@ -177,8 +177,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             const wartoscibotogl = new Discord.RichEmbed()
             .setColor('#ff005c')
             .setTitle('Numery tekstów "BOT OGLĄDA"')
@@ -190,7 +190,7 @@ client.on('message' , message => {
             .addField('5', 'jakiś mecz', true)
             .addField('6', 'Yester! na YouTubie', true)
             .setTimestamp()
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             message.channel.send(wartoscibotogl)
          return  generalChannel.send(bladbotogl)
         }
@@ -204,9 +204,9 @@ client.on('message' , message => {
     .setTimestamp()
     .addField('Osoba wywołująca komendę', `${message.author}`, true)
     .addField('Obecny status aktywności BOTa - ogląda', `starego jak rucha matke`, true)
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
     client.user.setActivity(`starego jak rucha matke`, {type: "WATCHING"})
-    var generalChannel = client.channels.get("557594178704375820")
+    var generalChannel = client.channels.get("558703773682368524")
     generalChannel.send(zmianaogl)}
     else if (args == "2") {
         message.channel.send("Operacja wykonana prawidłowo")
@@ -218,9 +218,9 @@ client.on('message' , message => {
         .setTimestamp()
         .addField('Osoba wywołująca komendę', `${message.author}`, true)
         .addField('Obecny status aktywności BOTa - ogląda', `oślepianie się lampą bez powodu`, true)
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
         client.user.setActivity(`oślepianie się lampą bez powodu`, {type: "WATCHING"})
-        var generalChannel = client.channels.get("557594178704375820")
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(zmianaogl)}
     else if (args == "3") {
             message.channel.send("Operacja wykonana prawidłowo")
@@ -232,9 +232,9 @@ client.on('message' , message => {
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
             .addField('Obecny status aktywności BOTa - ogląda', `Fame MMA`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             client.user.setActivity(`Fame MMA`, {type: "WATCHING"})
-            var generalChannel = client.channels.get("557594178704375820")
+            var generalChannel = client.channels.get("558703773682368524")
             generalChannel.send(zmianaogl)}
     else if (args == "4") {
                 message.channel.send("Operacja wykonana prawidłowo")
@@ -246,9 +246,9 @@ client.on('message' , message => {
                 .setTimestamp()
                 .addField('Osoba wywołująca komendę', `${message.author}`, true)
                 .addField('Obecny status aktywności BOTa - ogląda', `Pewds vs T-series`, true)
-                .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+                .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
                 client.user.setActivity(`Pewds vs T-series`, {type: "WATCHING"})
-                var generalChannel = client.channels.get("557594178704375820")
+                var generalChannel = client.channels.get("558703773682368524")
                 generalChannel.send(zmianaogl)}
     else if (args == "5") {
         message.channel.send("Operacja wykonana prawidłowo")
@@ -260,9 +260,9 @@ client.on('message' , message => {
         .setTimestamp()
         .addField('Osoba wywołująca komendę', `${message.author}`, true)
         .addField('Obecny status aktywności BOTa - ogląda', `jakiś mecz`, true)
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
         client.user.setActivity(`jakiś mecz`, {type: "WATCHING"})
-        var generalChannel = client.channels.get("557594178704375820")
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(zmianaogl)}
     else if (args == "6") {
             message.channel.send("Operacja wykonana prawidłowo")
@@ -274,9 +274,9 @@ client.on('message' , message => {
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
             .addField('Obecny status aktywności BOTa - ogląda', `Yester! na YouTubie`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             client.user.setActivity(`Yester! na YouTubie`, {type: "WATCHING"})
-            var generalChannel = client.channels.get("557594178704375820")
+            var generalChannel = client.channels.get("558703773682368524")
             generalChannel.send(zmianaogl)}
     }
     else if (command === "botslu") { /* Zmiana tego co slucha BOT */
@@ -289,8 +289,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             const wartoscibotogl = new Discord.RichEmbed()
             .setColor('#ff005c')
             .setTitle('Numery tekstów "BOT SŁUCHA"')
@@ -302,7 +302,7 @@ client.on('message' , message => {
             .addField('5', 'ryku silników', true)
             .addField('6', 'wiertarki zza ściany', true)
             .setTimestamp()
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             message.channel.send(wartoscibotogl)
          return  generalChannel.send(bladbotogl)
         }
@@ -316,9 +316,9 @@ client.on('message' , message => {
     .setTimestamp()
     .addField('Osoba wywołująca komendę', `${message.author}`, true)
     .addField('Obecny status aktywności BOTa - słucha', `starego jak rucha matke`, true)
-    .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+    .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
     client.user.setActivity(`starego jak rucha matke`, {type: "LISTENING"})
-    var generalChannel = client.channels.get("557594178704375820")
+    var generalChannel = client.channels.get("558703773682368524")
     generalChannel.send(zmianaogl)}
     else if (args == "2") {
         message.channel.send("Operacja wykonana prawidłowo")
@@ -330,9 +330,9 @@ client.on('message' , message => {
         .setTimestamp()
         .addField('Osoba wywołująca komendę', `${message.author}`, true)
         .addField('Obecny status aktywności BOTa - słucha', `śpiewu Godlewskich`, true)
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
         client.user.setActivity(`śpiewu Godlewskich`, {type: "LISTENING"})
-        var generalChannel = client.channels.get("557594178704375820")
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(zmianaogl)}
     else if (args == "3") {
             message.channel.send("Operacja wykonana prawidłowo")
@@ -344,9 +344,9 @@ client.on('message' , message => {
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
             .addField('Obecny status aktywności BOTa - słucha', `disco polo`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             client.user.setActivity(`disco polo`, {type: "LISTENING"})
-            var generalChannel = client.channels.get("557594178704375820")
+            var generalChannel = client.channels.get("558703773682368524")
             generalChannel.send(zmianaogl)}
     else if (args == "4") {
                 message.channel.send("Operacja wykonana prawidłowo")
@@ -358,9 +358,9 @@ client.on('message' , message => {
                 .setTimestamp()
                 .addField('Osoba wywołująca komendę', `${message.author}`, true)
                 .addField('Obecny status aktywności BOTa - słucha', `heavy metalu`, true)
-                .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+                .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
                 client.user.setActivity(`heavy metalu`, {type: "LISTENING"})
-                var generalChannel = client.channels.get("557594178704375820")
+                var generalChannel = client.channels.get("558703773682368524")
                 generalChannel.send(zmianaogl)}
     else if (args == "5") {
         message.channel.send("Operacja wykonana prawidłowo")
@@ -372,9 +372,9 @@ client.on('message' , message => {
         .setTimestamp()
         .addField('Osoba wywołująca komendę', `${message.author}`, true)
         .addField('Obecny status aktywności BOTa - słucha', `ryku silników`, true)
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
         client.user.setActivity(`ryku silników`, {type: "LISTENING"})
-        var generalChannel = client.channels.get("557594178704375820")
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(zmianaogl)}
     else if (args == "6") {
             message.channel.send("Operacja wykonana prawidłowo")
@@ -386,9 +386,9 @@ client.on('message' , message => {
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
             .addField('Obecny status aktywności BOTa - słucha', `wiertarki zza ściany`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
             client.user.setActivity(`wiertarki zza ściany`, {type: "LISTENING"})
-            var generalChannel = client.channels.get("557594178704375820")
+            var generalChannel = client.channels.get("558703773682368524")
             generalChannel.send(zmianaogl)}
     }
     else if (command === "helpa") {
@@ -404,8 +404,10 @@ client.on('message' , message => {
         .addField('=botogl 1-6', 'Komenda zmieniająca statusu aktywności (ogląda) bota. Wpisanie komendy bez wartości umożliwia sprawdzenie opcji', true)
         .addField('=botslu 1-6', 'Komenda zmieniająca statusu aktywności (słucha) bota. Wpisanie komendy bez wartości umożliwia sprawdzenie opcji', true)
         .addField('=czysc 2-100', 'Komenda umożliwiająca masowe usuwanie wiadomości', true)
+        .addField('=alexxstart','Komenda wysyłająca przypomnienie o streamie AleXXa', true)
+        .addField('=alexxstop', `Komenda wysyłająca informację o zakończeniu streama AleXXa`, true)
         .setTimestamp()
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
         message.channel.send(pomocadm)
     }
     else if (command === "czysc") {
@@ -428,8 +430,8 @@ client.on('message' , message => {
         .addField(`Wyczyszczony kanał`, `${message.channel}`, true)
         .addField('Liczba wyczyszczonych wiadomości', `${amount}`)
         .setTimestamp()
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
-        var generalChannel = client.channels.get("557594178704375820")
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+        var generalChannel = client.channels.get("558703773682368524")
             generalChannel.send(wyczyszczono)
     }
     else if (command === "kick") {
@@ -442,8 +444,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             message.channel.send(`${message.author} Niepoprawne użycie. Proszę oznaczyć osobę która ma zostać wyrzucona.`)
          return  generalChannel.send(bladkick)
         }
@@ -459,8 +461,8 @@ client.on('message' , message => {
         .addField('Wyrzucono przez', `${message.author}`, true)
         .addField('Wyrzucony użytkownik', `${taggedUser.username}`, true)
         .setTimestamp()
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
-        var generalChannel = client.channels.get("557594178704375820")
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(wyrzucono)
     }
     else if (command === "ban") {
@@ -473,8 +475,8 @@ client.on('message' , message => {
             .setAuthor('Pomocnik - błędy')
             .setTimestamp()
             .addField('Osoba wywołująca komendę', `${message.author}`, true)
-            .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
-            var generalChannel = client.channels.get("557594178704375820")
+            .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+            var generalChannel = client.channels.get("558703773682368524")
             message.channel.send(`${message.author} Niepoprawne użycie. Proszę oznaczyć osobę która ma zostać zbanowana.`)
          return  generalChannel.send(bladkick)
         }
@@ -490,8 +492,41 @@ client.on('message' , message => {
         .addField('Zbanowano przez', `${message.author}`, true)
         .addField('Zbanowany użytkownik', `${taggedUser.username}`, true)
         .setTimestamp()
-        .setFooter('Wersja 0.1 BETA    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
-        var generalChannel = client.channels.get("557594178704375820")
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg')
+        var generalChannel = client.channels.get("558703773682368524")
         generalChannel.send(zbanowano)
+    }
+    else if (command === "alexxstart") { /* Przypomnienie o streamie*/
+        message.delete()
+        const streamstartee = new Discord.RichEmbed()
+        .setColor('#ffa803')
+        .setTitle('AleXX właśnie zaczął streamować')
+        .setAuthor('Przypominajka')
+        .setThumbnail('https://lh3.googleusercontent.com/b90RoGevncC_OL11TGv6_RiVdh9Az3kPCo0FgRk6FX2W7jAfxBKqcKjjLtwO5q5mGOMhvQRnOA4R_A=w176-h176-n-o-rw')
+        .setDescription('Kliknij [tutaj](https://www.youtube.com/channel/UCvgFvKUpfaFOMwx4p4yCyUQ) aby przejść do jego kanału, zostawić suba z dzwoneczkiem :heart:')
+        .addField('Zobacz też jego Instagram', 'Znajdziesz [tu](https://www.instagram.com/de4th.inside/) wiele zdjęć z życia AleXXa spoza komputera! :smile:', true)
+        .addField('Ten pan ma również Steama', 'Zaproś go na [Steamie](https://steamcommunity.com/id/jubelox/) jeśli chciałbyś z nim kiedyś zagrać :joy:', true)
+        .addField('Oznaczę was żebyście widzieli :grin:', '@here', true)
+        .setTimestamp()
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        var generalChannel = client.channels.get("558701163067998219")
+        generalChannel.send(streamstartee)
+        client.user.setActivity("Stream AleXX'a", {type: "WATCHING"})
+    }
+        else if (command === "alexxstop") { /* Koniec streama */
+        message.delete()
+        const streamstopee = new Discord.RichEmbed()
+        .setColor('#ffa803')
+        .setTitle('AleXX właśnie skończył streamować')
+        .setAuthor('Przypominajka')
+        .setDescription('Ale kliknij [tutaj](https://www.youtube.com/channel/UCvgFvKUpfaFOMwx4p4yCyUQ) aby przejść do jego kanału i zostawić suba z dzwoneczkiem :heart:')
+        .addField('Zobacz też jego Instagram', 'Znajdziesz [tu](https://www.instagram.com/de4th.inside/) wiele zdjęć z życia AleXXa spoza komputera! :smile:', true)
+        .addField('Ten pan ma również Steama', 'Zaproś go na [Steamie](https://steamcommunity.com/id/jubelox/) jeśli chciałbyś z nim kiedyś zagrać :joy:', true)
+        .addField('Tu też was oznaczę :joy:', '@here', true)
+        .setTimestamp()
+        .setFooter('Wersja 0.5    Autor: AleXX#2892', 'https://i.pinimg.com/originals/3e/f9/82/3ef9822fbc74615ee4d0c94db992f16f.jpg');
+        var generalChannel = client.channels.get("558701163067998219")
+        generalChannel.send(streamstopee)
+        client.user.setActivity("Yester! na Youtubie", {type: "WATCHING"})
     }
 }})
