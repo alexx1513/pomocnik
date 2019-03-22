@@ -1,0 +1,11 @@
+{
+	"name": "Pomocnik-by-AleXX",
+	"version": "0.5",
+	"description": "Bot na serwer Yesterniakowo",
+	"readme": "README.md",
+	"author": "AleXX",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/alexx1513/pomocnik"
+	},
+	}
